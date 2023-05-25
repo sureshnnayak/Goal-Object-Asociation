@@ -10,10 +10,12 @@ using RosTarget = RosMessageTypes.Unity.Vector3Msg;
 public class BossScript : MonoBehaviour
 {
     Vector3 target;
+    
     float speed = 1.1f;
     // Start is called before the first frame update
     void Start()
     {
+    	target = transform.position;
 
         //ROSConnection.GetOrCreateInstance().Subscribe<RosTarget>("target", locationChange);
          ROSConnection.GetOrCreateInstance().Subscribe<RosTarget>("Boss", locationChange);

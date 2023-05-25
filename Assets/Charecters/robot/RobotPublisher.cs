@@ -31,7 +31,7 @@ public class RobotPublisher : MonoBehaviour
 
         if (timeElapsed > publishMessageFrequency)
         {
-            Aj.transform.rotation = Random.rotation;
+            //Aj.transform.rotation = Random.rotation;
 
             PosRotMsg AjPos = new PosRotMsg(
                 Aj.transform.position.x,

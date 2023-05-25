@@ -34,8 +34,11 @@ getRobotLocation()
 ```bash
     cd ~/catkin_ws/
     source devel/setup.sh 
+    
+    #source ~/catkin_ws/devel/setup.sh 
     #in another terminal
     rosparam set ROS_IP 192.168.50.91
+    rosrun ros_tcp_endpoint default_server_endpoint.py
     roscore
 ```
 

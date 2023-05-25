@@ -14,7 +14,7 @@ public class MeganScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+	target = transform.position;
         //ROSConnection.GetOrCreateInstance().Subscribe<RosTarget>("target", locationChange);
          ROSConnection.GetOrCreateInstance().Subscribe<RosTarget>("Megan", locationChange);
         

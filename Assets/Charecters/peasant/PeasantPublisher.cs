@@ -31,7 +31,7 @@ public class PeasantPublisher : MonoBehaviour
 
         if (timeElapsed > publishMessageFrequency)
         {
-            Aj.transform.rotation = Random.rotation;
+            
 
             PosRotMsg AjPos = new PosRotMsg(
                 Aj.transform.position.x,
